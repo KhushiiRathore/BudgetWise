@@ -1,0 +1,14 @@
+{
+  "name": "fintech-project",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd fintech-backend && nodemon server.js",
+    "client": "cd fintech-frontend && npm start"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.0",
+    "nodemon": "^3.1.10"
+  }
+}

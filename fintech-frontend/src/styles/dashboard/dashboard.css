@@ -1,0 +1,98 @@
+.dashboard {
+  padding: 2rem;
+  background: #f4f6f8;
+  min-height: 100vh;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Logout Button */
+.dashboard button {
+  background: #ff4b5c;
+  color: white;
+  border: none;
+  padding: 0.5rem 1.2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  font-weight: bold;
+}
+
+.dashboard button:hover {
+  background: #e84350;
+}
+
+.dashboard h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #333;
+  font-size: 2rem;
+}
+
+/* Add spacing between sections */
+.dashboard > * {
+  margin-bottom: 2rem;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+  .dashboard {
+    padding: 1rem;
+  }
+}
+
+
+.pie-chart-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0;
+}
+
+.pie-chart-container canvas {
+  max-width: 300px !important;
+  max-height: 300px !important;
+}
+
+
+.dashboard {
+  padding: 1rem;
+}
+
+/* Desktop layout (default) */
+.dashboard-sections {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+/* Mobile layout */
+@media (max-width: 768px) {
+  .dashboard-sections {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .pie-chart-container canvas {
+    max-width: 250px !important;
+    max-height: 250px !important;
+  }
+}
+
+.filter-buttons {
+  margin: 1rem 0;
+  display: flex;
+  gap: 1rem;
+}
+
+.filter-buttons button {
+  padding: 0.5rem 1rem;
+  background-color: #2575fc;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.filter-buttons button:hover {
+  background-color: #1a5edb;
+}
